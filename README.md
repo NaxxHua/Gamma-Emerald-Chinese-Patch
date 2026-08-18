@@ -8,8 +8,8 @@
 
 | 游戏版本 | 补丁 |
 |---|---|
-| Early Access **Build 1.11.1**（当前最新） | [Releases](../../releases) 里的 `伽马绿宝石简体中文补丁v2.1-for-1.11.1.zip`，或直接使用仓库中的 [`patch-1.11.1/`](patch-1.11.1/) |
-| 早期构建 Build 1.0.0（2026-08-14） | `伽马绿宝石简体中文补丁v2.1-for-1.0.0.zip`，或 [`patch-1.0.0/`](patch-1.0.0/) |
+| Early Access **Build 1.11.1**（当前最新） | [Releases](../../releases/latest) 里的 `v2.1-for-1.11.1.zip`（[直链](../../releases/download/v2.1/v2.1-for-1.11.1.zip)），或直接使用仓库中的 [`patch-1.11.1/`](patch-1.11.1/) |
+| 早期构建 Build 1.0.0（2026-08-14） | `v2.1-for-1.0.0.zip`（[直链](../../releases/download/v2.1/v2.1-for-1.0.0.zip)），或 [`patch-1.0.0/`](patch-1.0.0/) |
 
 其他版本请等待更新，不保证兼容。
 
