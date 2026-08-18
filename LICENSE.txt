@@ -1,0 +1,13 @@
+版权与使用条款 / Terms
+
+本补丁（Pokemon Gamma Emerald 简体中文补丁）由 花水月FlowaterMoon 制作，为非官方、非营利的同人汉化作品。
+
+允许：个人免费下载、安装、使用；在注明出处（花水月FlowaterMoon）且附带本条款的前提下转载。
+禁止：任何商业用途；售卖或捆绑售卖；去除署名后转载；未经许可的二次打包发布。
+
+Pokémon 及相关角色、名称、图像的著作权与商标权归 Nintendo / Creatures Inc. / GAME FREAK inc. 所有；
+Pokemon Gamma Emerald 归其作者 UndreamedPanic 所有（https://undreamedpanic.itch.io/gamma-emerald-ea）。
+本补丁与上述权利方均无关联，如权利方要求将立即撤下。
+
+第三方资源：文泉驿点阵宋（GPL 含字体例外）；巧月十八 Demo 3.1 汉化的部分译文；pokeemerald 中文项目译文。
+本补丁按“现状”提供，不对使用后果（含存档异常）承担责任。
