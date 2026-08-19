@@ -1,5 +1,5 @@
 @echo off
-chcp 65001 >nul
 set "HERE=%~dp0"
-copy /Y "%HERE%Х║╔Д╦│Ф√┤Д╩╤\PokemonEmerald-Windows_p.pak" "%HERE%PokemonEmerald\Content\Paks\PokemonEmerald-Windows_p.pak" >nul && echo Е╥╡Е┬┤Ф█╒Д╦╨Б─°Е╝²Е▐╞Ф╒╕Г╖█Ф≈▐Е░█Д╦╜Ф√┤Б─²Г┴┬Ф°╛Ц─┌ || echo Е╓█Е┬╤Е╓╠Х╢╔О╪▄Х╞╥Е┘┬Ф┼┼Х║╔Д╦│Х╖ёЕ▌▀Е┬╟Ф╦╦Ф┬▐Ф═╧Г⌡╝Е╫∙Е╧╤И──Е┤╨Ф╦╦Ф┬▐Ц─┌
+if not exist "%HERE%PokemonEmerald.exe" ( echo гКох╟я╡╧╤║╫Бя╧╣╫сно╥╦Ыд©б╪ё╗╨м PokemonEmerald.exe м╛р╩╡Цё╘тыткпп║ё& pause & exit /b 1 )
+copy /Y "%HERE%╡╧╤║нд╪Ч\PokemonEmerald-Windows_p.pak" "%HERE%PokemonEmerald\Content\Paks\PokemonEmerald-Windows_p.pak" >nul && echo рягп╩╩н╙║╟╠╕©ицнжжвЕцШжпнд║╠╟Ф╠╬║ё|| echo ╦╢жфй╖╟эё╛гКохмкЁЖсно╥║ё
 pause

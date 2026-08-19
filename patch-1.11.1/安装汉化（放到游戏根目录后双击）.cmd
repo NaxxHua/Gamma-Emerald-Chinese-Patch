@@ -1,27 +1,35 @@
 @echo off
-chcp 65001 >nul
 setlocal
 set "HERE=%~dp0"
-set "GAME=%HERE%"
-if not exist "%GAME%PokemonEmerald.exe" (
-  echo æ²¡æœ‰åœ¨å½“å‰ç›®å½•æ‰¾åˆ° PokemonEmerald.exeã€‚
-  echo è¯·æŠŠæ•´ä¸ªè¡¥ä¸æ–‡ä»¶å¤¹é‡Œçš„å†…å®¹è§£å‹åˆ°æ¸¸æˆæ ¹ç›®å½•ï¼ˆå’Œ PokemonEmerald.exe åŒä¸€å±‚ï¼‰ï¼Œå†åŒå‡»æœ¬è„šæœ¬ã€‚
-  pause
-  exit /b 1
+echo ==============================================
+echo  Ù¤ÂíÂÌ±¦Ê¯ ¼òÌåÖĞÎÄ²¹¶¡ - °²×°
+echo ==============================================
+if not exist "%HERE%PokemonEmerald.exe" (
+  echo [´íÎó] µ±Ç°Ä¿Â¼Ã»ÓĞ PokemonEmerald.exe
+  echo Çë°Ñ²¹¶¡Ñ¹Ëõ°üÀïµÄÈ«²¿ÄÚÈİ½âÑ¹µ½ÓÎÏ·¸ùÄ¿Â¼£¨ºÍ PokemonEmerald.exe Í¬Ò»²ã£©£¬ÔÙË«»÷±¾½Å±¾¡£
+  echo µ±Ç°Ä¿Â¼: %HERE%
+  goto :end
 )
-if not exist "%GAME%PokemonEmerald\Content\Paks\PokemonEmerald-Windows.pak" (
-  echo æœªæ‰¾åˆ° PokemonEmerald\Content\Paks\PokemonEmerald-Windows.pakï¼Œè¯·ç¡®è®¤æ¸¸æˆç‰ˆæœ¬ã€‚
-  pause
-  exit /b 1
+if not exist "%HERE%PokemonEmerald\Content\Paks\PokemonEmerald-Windows.pak" (
+  echo [´íÎó] Î´ÕÒµ½ PokemonEmerald\Content\Paks\PokemonEmerald-Windows.pak£¬ÇëÈ·ÈÏÕâÊÇÓÎÏ·Ä¿Â¼¡£
+  goto :end
 )
-mkdir "%GAME%PokemonEmerald\Content\Localization\Game\en" 2>nul
-copy /Y "%HERE%è¡¥ä¸æ–‡ä»¶\PokemonEmerald-Windows_p.pak" "%GAME%PokemonEmerald\Content\Paks\PokemonEmerald-Windows_p.pak" >nul || goto :fail
-copy /Y "%HERE%è¡¥ä¸æ–‡ä»¶\Game.locres" "%GAME%PokemonEmerald\Content\Localization\Game\en\Game.locres" >nul || goto :fail
-echo å®‰è£…å®Œæˆï¼å¯åŠ¨æ¸¸æˆå³å¯çœ‹åˆ°ä¸­æ–‡ã€‚
-echo ï¼ˆå¦‚éœ€å®å¯æ¢¦ç§æ—åä¿ç•™è‹±æ–‡çš„ä¿å®ˆç‰ˆæœ¬ï¼Œè¯·è¿è¡Œâ€œåˆ‡æ¢-å®å¯æ¢¦åä¿ç•™è‹±æ–‡.cmdâ€ï¼‰
+if not exist "%HERE%²¹¶¡ÎÄ¼ş\PokemonEmerald-Windows_p.pak" (
+  echo [´íÎó] ÕÒ²»µ½ ²¹¶¡ÎÄ¼ş\PokemonEmerald-Windows_p.pak£¬Çë°Ñ¡°²¹¶¡ÎÄ¼ş¡±ÎÄ¼ş¼ĞºÍ±¾½Å±¾Ò»Æğ½âÑ¹µ½ÓÎÏ·¸ùÄ¿Â¼¡£
+  goto :end
+)
+tasklist /FI "IMAGENAME eq PokemonEmerald-Win64-Shipping.exe" 2>nul | find /I "PokemonEmerald" >nul && echo [ÌáÊ¾] ÓÎÏ·ËÆºõÕıÔÚÔËĞĞ£¬ÇëÏÈÍêÈ«ÍË³öÓÎÏ·ÔÙ°²×°¡£
+if not exist "%HERE%PokemonEmerald\Content\Localization\Game\en" mkdir "%HERE%PokemonEmerald\Content\Localization\Game\en"
+copy /Y "%HERE%²¹¶¡ÎÄ¼ş\PokemonEmerald-Windows_p.pak" "%HERE%PokemonEmerald\Content\Paks\PokemonEmerald-Windows_p.pak" >nul
+if errorlevel 1 ( echo [´íÎó] ¸´ÖÆ pak Ê§°Ü£¬ÇëÈ·ÈÏÓÎÏ·ÒÑÍË³ö¡¢Ä¿Â¼¿ÉĞ´¡£& goto :end )
+copy /Y "%HERE%²¹¶¡ÎÄ¼ş\Game.locres" "%HERE%PokemonEmerald\Content\Localization\Game\en\Game.locres" >nul
+if errorlevel 1 ( echo [´íÎó] ¸´ÖÆ Game.locres Ê§°Ü¡£& goto :end )
+echo.
+echo [Íê³É] ÒÑ°²×°ÒÔÏÂÁ½¸öÎÄ¼ş£º
+for %%F in ("%HERE%PokemonEmerald\Content\Paks\PokemonEmerald-Windows_p.pak" "%HERE%PokemonEmerald\Content\Localization\Game\en\Game.locres") do echo   %%~fF  (%%~zF ×Ö½Ú)
+echo.
+echo ÏÖÔÚÆô¶¯ÓÎÏ·¼´¿ÉÏÔÊ¾ÖĞÎÄ¡£ÈôÈÔÊÇÓ¢ÎÄ£¬ÇëÔËĞĞ¡°¼ì²é°²×°.cmd¡±²¢°ÑÉú³ÉµÄ ºº»¯¼ì²é½á¹û.txt ·¢¸øºº»¯Õß¡£
+echo £¨±¦¿ÉÃÎÖÖ×åÃûÏë±£ÁôÓ¢ÎÄ£¬ÔËĞĞ¡°ÇĞ»»-±¦¿ÉÃÎÃû±£ÁôÓ¢ÎÄ.cmd¡±£©
+:end
+echo.
 pause
-exit /b 0
-:fail
-echo å¤åˆ¶å¤±è´¥ï¼Œè¯·ç¡®è®¤æ¸¸æˆå·²å®Œå…¨é€€å‡ºã€‚
-pause
-exit /b 1

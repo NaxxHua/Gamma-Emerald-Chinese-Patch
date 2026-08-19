@@ -1,7 +1,6 @@
 @echo off
-chcp 65001 >nul
 set "HERE=%~dp0"
 del /Q "%HERE%PokemonEmerald\Content\Paks\PokemonEmerald-Windows_p.pak" 2>nul
 del /Q "%HERE%PokemonEmerald\Content\Localization\Game\en\Game.locres" 2>nul
-echo Е╥╡Е┬═И≥╓Х║╔Д╦│Ф√┤Д╩╤О╪▄Ф╦╦Ф┬▐Ф│╒Е╓█Х▀╠Ф√┤Е▌÷Г┴┬Ц─┌
+echo ряи╬ЁЩ╡╧╤║нд╪Чё╛сно╥╩ж╦╢с╒ндт╜╟Ф║ё
 pause

@@ -17,6 +17,9 @@
    手动安装：把 补丁文件\PokemonEmerald-Windows_p.pak 复制到 PokemonEmerald\Content\Paks\，
              把 补丁文件\Game.locres 复制到 PokemonEmerald\Content\Localization\Game\en\（没有该文件夹就新建）。
 4. 启动游戏。
+5. 如果进游戏仍是英文：双击“检查安装.cmd”，把生成的 汉化检查结果.txt 发给汉化者。
+   常见原因：解压位置不对（必须和 PokemonEmerald.exe 同一层，游戏目录里另有一个 PokemonEmerald 文件夹，别放进那里面）、
+   游戏没有完全退出、手动复制时文件夹名拼错（Localization\Game\en）。
 
 【两个版本】
 - 默认版：宝可梦种族名也是中文（木守宫、蛇纹熊……）。
