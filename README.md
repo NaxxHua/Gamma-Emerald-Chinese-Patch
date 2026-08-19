@@ -1,6 +1,6 @@
 # Pokemon Gamma Emerald（伽马绿宝石）简体中文补丁
 
-**汉化：花水月 FlowaterMoon** ｜ ★ 花水月FlowaterMoon 汉化 ★ 转载请注明出处，禁止商用
+**汉化：花水月 FlowaterMoon** ｜ ★ 花水月FlowaterMoon 汉化 ★ 未经授权禁止转载，禁止商用
 
 游戏本体（官方，免费）：<https://undreamedpanic.itch.io/gamma-emerald-ea>
 
@@ -42,7 +42,7 @@
 - 招式名、宝可梦种族名（默认版）为官方中文。
 
 ## 版权与声明
-- 本补丁为非官方、非营利的同人汉化，仅供学习交流使用，禁止用于任何商业用途；禁止未经许可的二次打包、售卖或去除署名后转载。
+- 本补丁为非官方、非营利的同人汉化，仅供学习交流使用。**未经作者授权禁止转载、二次打包或搬运至其他平台**；经授权转载须注明出处（花水月FlowaterMoon）并附带本仓库链接。禁止任何商业用途、售卖或捆绑售卖，禁止去除署名。
 - 补丁仅包含汉化所需的字体、词库和少量改名后的资源文件，不包含游戏本体；游戏本体请从作者 UndreamedPanic 的官方页面获取：<https://undreamedpanic.itch.io/gamma-emerald-ea>
 - Pokémon / 宝可梦 及相关角色、名称、图像的著作权与商标权归 Nintendo / Creatures Inc. / GAME FREAK inc. 所有；Pokemon Gamma Emerald 归其作者 UndreamedPanic 所有。本补丁与上述权利方均无关联，如权利方要求将立即撤下。
 - 汉化文本 © 2026 花水月FlowaterMoon，并沿用了以下开放资源，特此致谢：
